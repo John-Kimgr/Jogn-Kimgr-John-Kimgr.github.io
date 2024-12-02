@@ -16,7 +16,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   height: 100%;
   overflow-y: auto;
   width: v.$sidebar-width;
-  background: var(--sidebar-bg);
+
+  background-image: url(https://images.unsplash.com/photo-1531333377070-c6575ba98c97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D);
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -58,7 +59,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     width: 6.5rem;
     height: 6.5rem;
     overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
+    box-shadow: white 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
 
     @include bp.sm {
@@ -106,12 +107,12 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
     width: fit-content;
-    color: var(--site-title-color);
+    color: white;
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--site-subtitle-color);
+    color: white;
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
@@ -147,12 +148,14 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
         i {
           font-size: 95%;
+          color: white;
           opacity: 0.8;
           margin-right: 1.5rem;
         }
 
         span {
           font-size: 90%;
+          color: white;
           letter-spacing: 0.2px;
         }
       }
@@ -191,15 +194,15 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       height: $btn-size;
       margin-bottom: $btn-mb; // multi line gap
       border-radius: 50%;
-      color: var(--sidebar-btn-color);
-      background-color: var(--sidebar-btn-bg);
+      color: white;
+      background-color: black;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
 
       &:not(:focus-visible) {
-        box-shadow: var(--sidebar-border-color) 0 0 0 1px;
+        box-shadow: black 0 0 0 1px;
       }
 
       &:hover {
@@ -235,7 +238,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @extend %no-cursor;
       @include mx.ml-mr(calc((v.$sb-btn-gap - $btn-border-width) / 2));
 
-      background-color: var(--sidebar-btn-color);
+      background-color: black;
       content: '';
       width: $btn-border-width;
       height: $btn-border-width;
